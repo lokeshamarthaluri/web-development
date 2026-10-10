@@ -1,0 +1,26 @@
+.h1-tag{
+    color:blueviolet;
+}
+.nav-bar{
+    background-color: #d57aae;
+    padding: 16px;
+    border-color: #060606;
+    border-width: 8px;
+    border-style: solid;
+    text-align: center;
+}
+.nav-bar a{
+    color: #060606;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.nav-bar a:hover{
+    color:azure;
+    padding:4px;
+    text
+}
+.card{
+    margin-right: auto;
+    margin-left: auto;
+    box -shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
