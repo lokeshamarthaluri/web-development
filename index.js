@@ -24,4 +24,22 @@ function toggle() {
     document.getElementById("user-name").innerText = currentUser.name;
     document.getElementById("user-gender").innerText = currentUser.gender;
     document.getElementById("user-avatar").src = currentUser.image;
+
+
+}
+
+function randomUser(){
+    fetch("https://randomuser.me/api/")
+    .then(function(rawdata){
+        return rawdata.json();
+    })
+    .then(function(jsonData){
+        var user=jsonData.results[0];
+        var gender=user.gender;
+        var fullName=user.name.title + " " + user.name.first + " "+ user.name.last;
+        var image=user.picture.large;
+        document.getElementById("user-name").innerText = fullName;
+        document.getElementById("user-gender").innerText = gender;
+        document.getElementById("user-avatar").src = image;
+    })
 }
